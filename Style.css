@@ -16,6 +16,7 @@ section {
     float: left;
     width: 65%;
     margin: 0.75%;
+    margin-bottom: 0.5%;
     background-color: #FDF3E7;
     background: linear-gradient(-45deg, #efe4d7, #FDF3E7);
     font-family: 'Merriweather', sans-serif;
