@@ -1,47 +1,60 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <link rel="stylesheet" href="Style.css">
+  <link rel="stylesheet" href="styleSheet.css">
+  <link rel="stylesheet" href="unsemantic-grid-responsive-tablet.css">
   <meta charset="UTF-8">
+  <meta
+  name="viewport"
+  content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+  />
   <title>Home</title>
 </head>
-
 <body>
+
   <header>
-    <section id = header><h1>Calum Wood - CV</h1></section>
+    <section class = "header"><h1>Calum Wood - CV</h1></section>
   </header>
 
-  <main>
-    <aside>
+  <main class="grid-container">
+    <aside id = "column" class = "grid-30 tablet-grid-30 mobile-grid-100">
       <nav id = "sidebar">
-        <a class = "buttonLink" href="index.html">Home<a/>
-          <a class = "buttonLink" href="index.html#Achievements">Achievements<a/>
-          <a class = "buttonLink" href="index.html#Education">Education<a/>
-          <a class = "buttonLink" href="index.html#Qualifications">Qualifications<a/>
-        <a class = "buttonLink" href="projects.html">Projects<a/>
-        <a class = "buttonLink" href="CV.html">CV<a/>
-        <a class = "buttonLink" href="contactMe.html">Contact Me<a/>
+
+        <div class="dropdown">
+          <a class = "buttonLink" href="index.html">Home</a>
+          <div class="dropdownContent">
+            <a class = "buttonLink" href="index.html#Achievements">Achievements</a>
+            <a class = "buttonLink" href="index.html#Education">Education</a>
+            <a class = "buttonLink" href="index.html#Qualifications">Qualifications</a>
+          </div>
+        </div>
+
+        <a class = "buttonLink" href="projects.html">Projects</a>
+        <a class = "buttonLink" href="CV.html">CV</a>
+        <a class = "buttonLink" href="contactMe.html">Contact Me</a>
+
       </nav>
     </aside>
 
-    <section id="Achievements">
-      <h2>Achievements</h2>
-      <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-    </section>
+    <div id = "column" class="grid-70 tablet-grid-70 mobile-grid-100">
 
-    <section id="Education">
-      <h2>Education</h2>
-      <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-    </section>
+      <section>
+        <h2>Section 1</h2>
+        <p>Lorem ipsum…</p>
+      </section>
 
-    <section id="Qualifications">
-      <h2>Qualifications</h2>
-      <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-    </section>
+      <section>
+        <h2>Section 2</h2>
+        <p>…</p>
+      </section>
 
+      <section>
+        <h2>Section 3</h2>
+        <p>Lorem ipsum…</p>
+      </section>
 
-
+    </div>
   </main>
 </body>
 </html>

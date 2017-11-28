@@ -2,36 +2,59 @@
 <html lang="en">
 
 <head>
-  <link rel="stylesheet" href="Style.css">
+  <link rel="stylesheet" href="styleSheet.css">
+  <link rel="stylesheet" href="unsemantic-grid-responsive-tablet.css">
   <meta charset="UTF-8">
+  <meta
+  name="viewport"
+  content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+  />
   <title>Home</title>
 </head>
-
 <body>
+
   <header>
-    <section id = header><h1>Calum Wood - CV</h1></section>
+    <section class = "header"><h1>Calum Wood - CV</h1></section>
   </header>
 
-  <main>
-    <aside>
-      <section id = sidebar>
-        <ul id="sidebarMenu">
-          <li><a href="index.html">Home<a/></li>
-          <ul>
-            <li><a href="index.html#Achievements">Achievements<a/></li>
-            <li><a href="index.html#Education">Education<a/></li>
-            <li><a href="index.html#Qualifications">Qualifications<a/></li>
-          </ul>
-          <li><a href="projects.html">Projects<a/></li>
-          <li>CV<a/></li>
-          <li><a href="contactMe.html">Contact Me</li>
-        </ul>
-      </section>
+  <main class="grid-container">
+    <aside id = "column" class = "grid-30 tablet-grid-30 mobile-grid-100">
+      <nav id = "sidebar">
+
+        <div class="dropdown">
+          <a class = "buttonLink" href="index.html">Home</a>
+          <div class="dropdownContent">
+            <a class = "buttonLink" href="index.html#Achievements">Achievements</a>
+            <a class = "buttonLink" href="index.html#Education">Education</a>
+            <a class = "buttonLink" href="index.html#Qualifications">Qualifications</a>
+          </div>
+        </div>
+
+        <a class = "buttonLink" href="projects.html">Projects</a>
+        <a class = "buttonLink" href="CV.html">CV</a>
+        <a class = "buttonLink" href="contactMe.html">Contact Me</a>
+
+      </nav>
     </aside>
 
-    <section>
+    <div id = "column" class="grid-70 tablet-grid-70 mobile-grid-100">
 
-    </section>
+      <section>
+        <h2>Section 1</h2>
+        <p>Lorem ipsum…</p>
+      </section>
+
+      <section>
+        <h2>Section 2</h2>
+        <p>…</p>
+      </section>
+
+      <section>
+        <h2>Section 3</h2>
+        <p>Lorem ipsum…</p>
+      </section>
+
+    </div>
   </main>
 </body>
 </html>
