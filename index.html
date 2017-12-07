@@ -1,54 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
-  <!--Get style Sheet data for CSS -->
+  <!-- Get style Sheet data for CSS -->
   <link rel="stylesheet" href="styleSheet.css">
-  <!--Load unsemanticstyke sheet for column sizing on phone and tablet-->
+  <!--Load unsemantic style sheet for column sizing on phone and tablet-->
   <link rel="stylesheet" href="unsemantic-grid-responsive-tablet.css">
 
-  <!--  -->
-  <meta name="viewport"
-  content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
-  />
+  <!-- Sets the title of the page -->
   <title>Home</title>
 </head>
+
 <body>
 
+  <!-- The haeader of the page -->
   <header>
-    <section class = "header"><h1>Calum Wood</h1></section>
+    <!-- container box for the header -->
+    <section class = "header">
+      <h1>Calum Wood</h1>
+    </section>
   </header>
 
+  <!-- Main page structure, unsemantic is used to put the sidebar inline when on mobile devices -->
   <main class="grid-container">
+
+    <!-- The sidebar of the page made full size if the screen is mobile sized-->
     <aside id = "column" class = "grid-30 tablet-grid-30 mobile-grid-100">
       <nav id = "sidebar">
-	  
-		<a class = "buttonLink" href="index.html">Home</a>
+
+        <!-- regular button link to another page-->
+        <a class = "buttonLink" href="index.html">Home</a>
+
+        <!-- A dropdown menu, held within a div-->
         <div class="dropdown">
-		  <a class = "buttonLink" href="projects.html">Projects</a>
+
+          <!-- button that regularly displays -->
+          <a class = "buttonLink" href="projects.html">Projects</a>
+
+          <!-- content that appears when the button is hovered over -->
           <div class="dropdownContent">
             <a class = "subMenu buttonLink" href="projects.html#dukeOfEdinburgh">Duke of Edinburgh</a>
             <a class = "subMenu buttonLink" href="projects.html#summerSchool">Summer School</a>
             <a class = "subMenu buttonLink" href="projects.html#battleships">Battleships</a>
           </div>
+
         </div>
 
-
+        <!-- regular buttons -->
         <a class = "buttonLink" href="CV.html">CV</a>
         <a class = "buttonLink" href="contactMe.html">Contact Me</a>
 
       </nav>
     </aside>
 
-    <div id = "column" class="grid-70 tablet-grid-70 mobile-grid-100">
+    <!-- main content column-->
+    <article id = "column" class="grid-70 tablet-grid-70 mobile-grid-100">
 
+      <!-- section of the article -->
       <section>
         <h2>About me</h2>
         <p>I am Calum, hi.</p>
       </section>
-	  
-    </div>
+
+    </article>
   </main>
 </body>
 </html>
