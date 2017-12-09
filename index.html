@@ -21,23 +21,23 @@
     </section>
   </header>
 
-  <!-- Main page structure, unsemantic is used to put the sidebar inline when on mobile devices -->
-  <main class="grid-container">
+  <!-- Main page structure, unsemantic is used to put the sidebar on top of the section panes when on mobile devices -->
+  <div class="grid-container">
 
-    <!-- The sidebar of the page made full size if the screen is mobile sized-->
+    <!-- The sidebar of the page made full size if the screen is mobile sized otherwise 30%-->
     <aside id = "column" class = "grid-30 tablet-grid-30 mobile-grid-100">
       <nav id = "sidebar">
 
-        <!-- regular button link to another page-->
+        <!-- Regular button link to another page-->
         <a class = "buttonLink" href="index.html">Home</a>
 
         <!-- A dropdown menu, held within a div-->
         <div class="dropdown">
 
-          <!-- button that regularly displays -->
+          <!-- Button that regularly displays -->
           <a class = "buttonLink" href="projects.html">Projects</a>
 
-          <!-- content that appears when the button is hovered over -->
+          <!-- This div indicates content in the dropdown menu -->
           <div class="dropdownContent">
             <a class = "subMenu buttonLink" href="projects.html#dukeOfEdinburgh">Duke of Edinburgh</a>
             <a class = "subMenu buttonLink" href="projects.html#summerSchool">Summer School</a>
@@ -46,23 +46,29 @@
 
         </div>
 
-        <!-- regular buttons -->
+        <!-- Regular buttons -->
         <a class = "buttonLink" href="CV.html">CV</a>
         <a class = "buttonLink" href="contactMe.html">Contact Me</a>
 
       </nav>
     </aside>
 
-    <!-- main content column-->
-    <article id = "column" class="grid-70 tablet-grid-70 mobile-grid-100">
+    <!-- Main content column-->
+	<!-- takes 70% of the width at desktop and tablet scale, at mobile takes 100% -->
+    <div id = "column" class="grid-70 tablet-grid-70 mobile-grid-100">
 
-      <!-- section of the article -->
-      <section>
-        <h2>About me</h2>
-        <p>I am Calum, hi.</p>
-      </section>
+      <!-- A pane for content to go in -->
+		<section>
+			<h2>About me</h2>
+			<p>Currently studying for a computing science degree at Robert Gordon University.</p>
+			
+			<h2>Skills</h2>
+			<p>knowledgable in Java, Python, C#, C++, HTML and CSS.</p>
+			
+		</section>
 
-    </article>
+	<!-- closing tags -->
+    </div>
   </main>
 </body>
 </html>

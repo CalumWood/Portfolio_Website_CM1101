@@ -2,70 +2,110 @@
 <html lang="en">
 
 <head>
+  <!-- Get style Sheet data for CSS -->
   <link rel="stylesheet" href="styleSheet.css">
+  <!--Load unsemantic style sheet for column sizing on phone and tablet-->
   <link rel="stylesheet" href="unsemantic-grid-responsive-tablet.css">
-  <meta charset="UTF-8">
-  <meta
-  name="viewport"
-  content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
-  />
-  <title>Projects</title>
+
+  <!-- Sets the title of the page -->
+  <title>Home</title>
 </head>
+
 <body>
 
+  <!-- The haeader of the page -->
   <header>
-    <section class = "header"><h1>Calum Wood</h1></section>
+    <!-- container box for the header -->
+    <section class = "header">
+      <h1>Calum Wood</h1>
+    </section>
   </header>
 
-  <main class = "grid-container">
+  <!-- Main page structure, unsemantic is used to put the sidebar on top of the section panes when on mobile devices -->
+  <div class="grid-container">
+
+    <!-- The sidebar of the page made full size if the screen is mobile sized otherwise 30% -->
     <aside id = "column" class = "grid-30 tablet-grid-30 mobile-grid-100">
       <nav id = "sidebar">
-	  
-		<a class = "buttonLink" href="index.html">Home</a>
+
+        <!-- Regular button link to another page-->
+        <a class = "buttonLink" href="index.html">Home</a>
+
+        <!-- A dropdown menu, held within a div-->
         <div class="dropdown">
-		  <a class = "buttonLink" href="projects.html">Projects</a>
+
+          <!-- Button that regularly displays -->
+          <a class = "buttonLink" href="projects.html">Projects</a>
+
+          <!-- This div indicates content in the dropdown menu -->
           <div class="dropdownContent">
             <a class = "subMenu buttonLink" href="projects.html#dukeOfEdinburgh">Duke of Edinburgh</a>
             <a class = "subMenu buttonLink" href="projects.html#summerSchool">Summer School</a>
             <a class = "subMenu buttonLink" href="projects.html#battleships">Battleships</a>
           </div>
+
         </div>
 
-
+        <!-- Regular buttons -->
         <a class = "buttonLink" href="CV.html">CV</a>
         <a class = "buttonLink" href="contactMe.html">Contact Me</a>
 
       </nav>
     </aside>
 
+    <!-- Main content column-->
+	<!-- takes 70% of the width at desktop and tablet scale, at mobile takes 100% -->
     <div id = "column" class="grid-70 tablet-grid-70 mobile-grid-100">
-
-      <div id = "column" class = "grid-container">
+		<div id = "column" class = "grid-container">
+		
+		<!-- A div to add borders without affecting the layout-->
+		<!-- sized for a third of the screen if on desktop otherwise takes all available width-->
         <div id = "column"  class = "grid-33 tablet-grid-100 mobile-grid-100">
+		
+			<!-- A pane for content to go in -->
           <section id = "dukeOfEdinburgh">
+		  
+			<!-- the round class gives the circle cutout effect -->
             <img class="round" src="img/dofe.jpg" width="100%" alt "Me helping lift a friends supplies to take of his strain as he started to fall behind.">
+			
             <h2>Duke of Edinburgh</h2>
             <p>I successfully completed a bronze Duke of Edinburgh award. I fulfilled the criteria by volunteering for 3 months at a high school science club. I also did running for 6 months through winter, as well as reciveing a first aid certification that took 3 months to complete.</p>
-          </section>
+          
+		  </section>
         </div>
 
+		<!-- A div to add borders without affecting the layout-->
+		<!-- sized for a third of the screen if on desktop otherwise takes all available width-->
         <div id = "column"  class = "grid-33 tablet-grid-100 mobile-grid-100">
+		
+		<!-- A pane for content to go in -->
+          <section id = "battleships">
+		  
+			<!-- the round class gives the circle cutout effect -->
+            <img class="round" src="img/battleships.jpg" width="100%" alt "A battleships board game.">
+			
+            <h2>Battleships</h2>
+            <p>For my advanced higher computing science project, I created battleships on Java using netbeans for GUI aid. The program works very well, without any known bugs or exceptions possible to the user.</p>
+          
+		  </section>
+        </div>
+		
+		<!-- A div to add borders without affecting the layout-->
+		<!-- sized for a third of the screen if on desktop otherwise takes all available width-->
+        <div id = "column"  class = "grid-33 tablet-grid-100 mobile-grid-100">
+		
+		<!-- A pane for content to go in -->
           <section id = "summerSchool">
+		  
+			<!-- the round class gives the circle cutout effect -->
             <img class="round" src="img/summerSchool.jpg" width="100%" alt "A picture of the graduation at leaps summer school.">
             <h2>Summer School</h2>
             <p>During summer 2017 I took part in LEAPs summer school, I completed courses in engineering and physics, maths and academic skills earning praise from lecturers in each.</p>
-          </section>
+        
+		</section>
         </div>
 
-        <div id = "column"  class = "grid-33 tablet-grid-100 mobile-grid-100">
-          <section id = "battleships">
-            <img class="round" src="img/battleships.jpg" width="100%" alt "A battleships board game.">
-            <h2>Battleships</h2>
-            <p>For my advanced higher computing science project, I created battleships on Java using netbeans for GUI aid. The program works very well, without any known bugs or exceptions possible to the user.</p>
-          </section>
-        </div>
-
-      </div>
+	<!-- closing tags -->
     </div>
   </main>
 </body>

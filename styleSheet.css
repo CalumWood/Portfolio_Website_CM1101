@@ -1,15 +1,16 @@
 main {
-  color: #3B3738;
+  color: #3B3738;	/* sets the text colour throughout the page */
 }
 
 .dropdownContent {
-    display: none;
+    display: none;	/* sets the dropdown content to invisible */
 }
 
 .dropdown:hover .dropdownContent {
-    display: block;
+    display: block;	/* makes dropdown content expand to fill content */
 }
 
+/* header text settings for the title */
 .header{
   font-size: 2em;
   text-align: center;
@@ -17,10 +18,12 @@ main {
   padding: 5px 2px;
 }
 
+/* sets the colour of the dropdown menu */
 a.subMenu {
 	background-color: #ff5151;
 }
 
+/* link button aesthetics */
 .buttonLink{
   padding: 3px;
   display: block;
@@ -30,8 +33,12 @@ a.subMenu {
   text-decoration: none;
 }
 
+/* changes colour on hover for button links */
+a:hover.buttonLink{
+  background-color: teal;
+}
 
-
+/* settings to add a round border */
 .round {
     position: relative;
     overflow: hidden;
@@ -42,6 +49,7 @@ a.subMenu {
     border-radius: 50%;
 }
 
+/* makes images round with the round class */
 .round img{
   display: block;
   margin: 0 auto;
@@ -55,18 +63,17 @@ a.subMenu {
   border-radius: 50%;
 }
 
+/* gets rid of formatting in columns */
 #column{
   padding: 0px;
 }
 
+/* sets the margin of the sidebar */
 #sidebar{
   margin: 10px 5px 0px 5px;
 }
 
-a:hover.buttonLink{
-  background-color: teal;
-}
-
+/* panes settings with a given background */
 section{
   background-color: #FDF3E7;
   font-family: 'Merriweather', sans-serif;
@@ -75,9 +82,10 @@ section{
   color: #3B3738;
 }
 
-
+/* backgrounds with contingincies in the event of lack of support */
 body {
   background: linear-gradient(-45deg, #b2360d , #C63D0F);
   background-color: #ff3d07;
+  /* background with tiled SVG background triangles */
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='72' viewBox='0 0 36 72'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23ff9200' fill-opacity='0.43'%3E%3Cpath d='M2 6h12L8 18 2 6zm18 36h12l-6 12-6-12z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
